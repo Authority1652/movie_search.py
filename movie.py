@@ -39,46 +39,7 @@ def movies(find_movie):
             print(f"The BoxOffice Made: {film['BoxOffice']}")
         else:
             print("could  not find movie")
-        
-
-
-
 
 
 
 movies("search")
-# import requests
-
-# # Function to search for a movie using the OMDB API
-# def search_movie(movie_name):
-#     api_key = 'your_omdb_api_key_here'  # Replace with your OMDB API key
-#     url = f"http://www.omdbapi.com/?t={movie_name}&apikey={api_key}"
-
-#     response = requests.get(url)
-#     print(response)
-
-#     if response.status_code == 200:
-#         data = response.json()
-#         if data['Response'] == 'True':
-#             # Printing movie details
-#             print(f"Title: {data['Title']}")
-#             print(f"Year: {data['Year']}")
-#             print(f"Genre: {data['Genre']}")
-#             print(f"Director: {data['Director']}")
-#             print(f"Actors: {data['Actors']}")
-#             print(f"Plot: {data['Plot']}")
-#             print(f"IMDB Rating: {data['imdbRating']}")
-#         else:
-#             print("Movie not found!")
-#     else:
-#         print("Error: Unable to fetch data from OMDB API")
-
-# # Main function to take input and call search_movie function
-# def main():
-#     print("Welcome to the Movie Search App!")
-#     movie_name = input("Enter the name of the movie you want to search: ")
-#     search_movie(movie_name)
-
-# # Running the main function
-# if __name__ == "__main__":
-#     main()
